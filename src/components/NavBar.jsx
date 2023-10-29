@@ -9,7 +9,7 @@ const NavBar = () => {
     <div>
         <Flex>
   <Box p='4'>
-        <h3>Brand</h3>
+        <h3>SuperMascotas CoBoyKi</h3>
   </Box>
   <Spacer />
 
@@ -18,11 +18,11 @@ const NavBar = () => {
     Categorias
   </MenuButton>
   <MenuList>
-    <MenuItem>A</MenuItem>
-    <MenuItem>B</MenuItem>
-    <MenuItem>C</MenuItem>
-    <MenuItem>D</MenuItem>
-    <MenuItem>E</MenuItem>
+    <MenuItem>Alimentos Balanceados</MenuItem>
+    <MenuItem>Accesorios Caninos</MenuItem>
+    <MenuItem>Remedios Caninos</MenuItem>
+    <MenuItem>Casas Para Tu Mascota</MenuItem>
+    <MenuItem>Juguetes Para tu Mascota</MenuItem>
   </MenuList>
 </Menu>
   <Spacer />
