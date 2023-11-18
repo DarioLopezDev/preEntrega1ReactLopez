@@ -9,7 +9,7 @@ const NavBar = () => {
     <div>
         <Flex>
   <Box p='4'>
-        <h3>SuperMascotas CoBoyKi</h3>
+        <h3>SuperMascotas MilKiBoyCo</h3>
   </Box>
   <Spacer />
 
