@@ -1,14 +1,19 @@
 import React from 'react'
 import { Badge } from '@chakra-ui/react'
-
+import { Flex, Spacer } from '@chakra-ui/react';
 import { FaShoppingCart } from 'react-icons/fa';
 
 const CartWidget = () => {
   return (
-    <div>
-        <h5><FaShoppingCart/></h5>
-        <Badge colorScheme='purple'>5</Badge>
-    </div>
+    <>
+      <Spacer />
+      <div className='logoCarrito'>
+        <Flex align='center' justify='center'>
+          <FaShoppingCart />
+        </Flex>
+        <h3 className='numeroCarrito'><Badge colorScheme='purple'>5</Badge></h3>
+      </div>
+    </>
   )
 }
 
