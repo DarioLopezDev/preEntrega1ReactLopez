@@ -21,8 +21,9 @@ const ItemDetail = ({ Productos }) => {
                                     <Heading size='md'>{p.nombre}</Heading>
                                 </CardHeader>
                                 <CardBody>
-                                    <Text>{p.description}</Text>
-                                    <Text>{p.category}</Text>
+                                    <Text>{p.descripcion}</Text>
+                                    <Text>{p.precio}</Text>
+                                    <Text>{p.categoria}</Text>
                                 </CardBody>
                                 <CardFooter>
                                     <ItemCount />

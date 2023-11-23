@@ -4,8 +4,8 @@ import ItemListContainer from './ItemListContainer'
 const Home = () => {
     return (
     <div>
-        <br />
         <h1>Bienvenidos a SuperMascotas Milkiboyco</h1>
+        <br />
         <img src='../src/assets/img/Home.jpg'/>
         <ItemListContainer/>
 
