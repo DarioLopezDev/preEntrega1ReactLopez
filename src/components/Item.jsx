@@ -11,7 +11,7 @@ const Item = ({ id, nombre, descripcion, precio, categoria, imagen }) => {
                     <Heading size='md'>{nombre}</Heading>
                 </CardHeader>
                 <CardBody>
-                <Image
+                    <Image
                         src={rutaImagen}
                         alt={nombre}
                         borderRadius='lg'
@@ -22,12 +22,12 @@ const Item = ({ id, nombre, descripcion, precio, categoria, imagen }) => {
                 </CardBody>
                 <CardFooter>
                     <ButtonGroup spacing='2'>
-                        <Link to = {`/Cart`}>
+                        <Link to={`/Cart`}>
                             <Button variant='solid' colorScheme='violet'>
                                 Agregar al carrito
                             </Button>
                         </Link>
-                        <Link to={`./Item/${id}`}>
+                        <Link to={`/ItemDetailContainer/${id}`}>
                             <Button variant='ghost' colorScheme='violet'>
                                 Detalles
                             </Button>

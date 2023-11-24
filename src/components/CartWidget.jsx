@@ -11,7 +11,7 @@ const CartWidget = () => {
         <Flex align='center' justify='center'>
           <FaShoppingCart />
         </Flex>
-        <h3 className='numeroCarrito'><Badge colorScheme='purple'>5</Badge></h3>
+        <h3 className='numeroCarrito'><Badge colorScheme='purple'></Badge></h3>
       </div>
     </>
   )

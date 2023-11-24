@@ -5,13 +5,13 @@ const ItemList = ({ Productos }) => {
     // Verifica si Productos es un array antes de intentar mapearlo
     if (!Array.isArray(Productos)) {
         console.error("Productos no es un array:", Productos);
-        return null; 
+        return null;
     }
 
     return (
         <>
             {Productos.map(({ id, nombre, descripcion, precio, stock, categoria, imagen }) => (
-                <Item 
+                <Item
                     key={id}
                     id={id}
                     nombre={nombre}

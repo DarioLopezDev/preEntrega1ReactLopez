@@ -1,9 +1,9 @@
 [
-    { "id": 1, "nombre": "Collar celeste", "descripcion": "Collar color celeste", "precio": 400, "stock": 10, "categoria": "Accesorios Caninos", "imagen": "1collarCeleste.webp"},
-    { "id": 2, "nombre": "Pechera Pesada", "descripcion": "Pechera para perros grandes de alta resistencia", "precio": 350, "stock": 12, "categoria": "Accesorios Caninos", "imagen": "2pecheraPesada.jpg" },
-    { "id": 3, "nombre": "Juguetes para Perros", "descripcion": "Juguetes con sonidos para perros", "precio": 250, "stock": 24, "categoria": "Juguetes Para Tu Mascota", "imagen": "3juguetesPerros.webp" },
-    { "id": 4, "nombre": "Juguetes para Gatos", "descripcion": "Juguetes diseñados para gatos", "precio": 300, "stock": 13, "categoria": "Juguetes Para Tu Mascota", "imagen": "4juguetesGatos.jpg" },
-    { "id": 5, "nombre": "Collar Azul", "descripcion": "Collar color azul", "precio": 800, "stock": 25, "categoria": "Accesorios Caninos", "imagen": "5collarAzul.webp" },
-    { "id": 6, "nombre": "Cardial para Perros", "descripcion": "Pastilla para el cuidado del Corazon en perros", "precio": 560, "stock": 26, "categoria": "Remedios Caninos", "imagen": "6cardialPerros.gif"}
+    { "id": 1, "nombre": "Collar celeste", "descripcion": "Collar color celeste", "precio": 400, "stock": 10, "categoria": "Accesorios", "imagen": "1collarCeleste.webp"},
+    { "id": 2, "nombre": "Pechera Pesada", "descripcion": "Pechera para perros grandes de alta resistencia", "precio": 350, "stock": 12, "categoria": "Accesorios", "imagen": "2pecheraPesada.jpg" },
+    { "id": 3, "nombre": "Juguetes para Perros", "descripcion": "Juguetes con sonidos para perros", "precio": 250, "stock": 24, "categoria": "Juguetes", "imagen": "3juguetesPerros.webp" },
+    { "id": 4, "nombre": "Juguetes para Gatos", "descripcion": "Juguetes diseñados para gatos", "precio": 300, "stock": 13, "categoria": "Juguetes", "imagen": "4juguetesGatos.jpg" },
+    { "id": 5, "nombre": "Collar Azul", "descripcion": "Collar color azul", "precio": 800, "stock": 25, "categoria": "Accesorios", "imagen": "5collarAzul.webp" },
+    { "id": 6, "nombre": "Cardial para Perros", "descripcion": "Pastilla para el cuidado del Corazon en perros", "precio": 560, "stock": 26, "categoria": "Remedios", "imagen": "6cardialPerros.gif"}
 
 ]

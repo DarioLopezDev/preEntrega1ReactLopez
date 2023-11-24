@@ -1,40 +1,43 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Button, Center } from '@chakra-ui/react';
+import { Image, Card, CardHeader, CardBody, CardFooter, Heading, Text, Button, Center } from '@chakra-ui/react';
 import ItemCount from './ItemCount';
 
 const ItemDetail = ({ Productos }) => {
     const { id } = useParams();
+    const productID = parseInt(id, 10);
+    const producto = Productos.find((p) => p.id === productID);
 
-
-    const filteredProducts = Productos.filter((producto) => producto.id == id)
+    if (!producto) {
+        return <div>No se encontró el producto</div>;
+    }
 
     return (
-        <div>
-            {filteredProducts.map((p) => {
-                return (
-                    <div key={p.id}>
-                        <Center p='1rem'>
-
-                            <Card>
-                                <CardHeader>
-                                    <Heading size='md'>{p.nombre}</Heading>
-                                </CardHeader>
-                                <CardBody>
-                                    <Text>{p.descripcion}</Text>
-                                    <Text>{p.precio}</Text>
-                                    <Text>{p.categoria}</Text>
-                                </CardBody>
-                                <CardFooter>
-                                    <ItemCount />
-                                </CardFooter>
-                            </Card>
-                        </Center>
+        <Center p='1rem'>
+            <Card>
+                <CardHeader>
+                    <Heading size='md'>{producto.nombre}</Heading>
+                </CardHeader>
+                <CardBody>
+                    <div>
+                        <Image
+                            src={`/src/assets/img/${producto.imagen}`}
+                            alt={producto.nombre}
+                            borderRadius='md'
+                            boxSize='300px'
+                        />
                     </div>
-                )
-            })}
-        </div>
-    )
-}
+                    <Text>{producto.stock}</Text>
+                    <Text>{producto.descripcion}</Text>
+                    <Text>{producto.precio}</Text>
+                    <Text>{producto.categoria}</Text>
+                </CardBody>
+                <CardFooter>
+                    <ItemCount />
+                </CardFooter>
+            </Card>
+        </Center>
+    );
+};
 
 export default React.memo(ItemDetail);

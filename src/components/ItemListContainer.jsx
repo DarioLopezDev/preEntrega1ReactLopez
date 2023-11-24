@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ItemList from './ItemList';
 import { useParams } from "react-router-dom";
-/* import data from './data/api.json'; // Importa el archivo JSON */
 
 const ItemListContainer = () => {
     const [Productos, setProductos] = useState([]);
@@ -10,7 +9,7 @@ const ItemListContainer = () => {
     const getProdByCat = async () => {
         // Lógica para obtener productos por categoría
         try {
-            const response = await fetch(`/src/data/api.json?category=${CategoriaID}`);
+            const response = await fetch(`/src/data/api.json?Categoria=${CategoriaID}`);
             const data = await response.json();
             return data;
         } catch (error) {
